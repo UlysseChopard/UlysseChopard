@@ -1,14 +1,14 @@
 ### Hi there 👋
 
-You can join me at : *chopard.ulysse@gmail.com*
+I'll be avalable for work on april 2022.
+
+You can reach me at : *chopard.ulysse@gmail.com*
 
 Glad to meet you !
 
 #### Next ideal job
 
 - Junior web application developer
-- Begining on april 2022
-- Remote
 - Javascript stack (Vanilla JS, Vue, NodeJs, Express, Cypress, MongoDB, Mongoose)
 - A thrive for complex problem solving and learning
 
