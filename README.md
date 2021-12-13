@@ -14,7 +14,7 @@ Glad to meet you !
 
 #### Current position
 
-I'm working on e2e testing with Cypress as a trainee for a web operating room management app called Orgo and developed by Medhop in Paris.
+I'm working on e2e testing with Cypress as a trainee for an operating room management web app called Orgo and developed by Medhop in Paris.
 
 Beside, I'm following the web developer formation at OpenClassroom. In this context, I had the opportunity to realize some projects you'll find on my Github profile.
 
@@ -34,6 +34,9 @@ Beside, I'm following the web developer formation at OpenClassroom. In this cont
   - Cypress
   - Jest / Mocha / Chai
 
+#### Learning
+
+I'm currently learning Vue.js and PHP
 
 <!--
 **UlysseChopard/UlysseChopard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
