@@ -8,15 +8,16 @@ Glad to meet you !
 
 #### Next ideal job
 
-- Junior web application developer
+- Web application developer
 - Javascript stack (Vanilla JS, Vue, NodeJs, Express, Cypress, MongoDB, Mongoose)
-- A thrive for complex problem solving and learning
+- A knack for complex problem solving and learning
 
 #### Current position
 
 I'm working on e2e testing with Cypress as a trainee for an operating room management web app called Orgo and developed by Medhop in Paris.
+I'm also moving the Orgo UI from PHP dynamised web app to Vue 3 powered web app.
 
-Beside, I'm following the web developer formation at OpenClassroom. In this context, I had the opportunity to realize some projects you'll find on my Github profile.
+Besides, I'm following the web developer formation at OpenClassroom. In this context, I had the opportunity to realize some projects you'll find on my Github profile.
 
 #### Current working tools
 
