@@ -49,10 +49,10 @@ Part of them are deployed through Github Pages or Netlify, the others depend on 
 Project | Content | What I learned
 :-----------|:-------|:-------------
 [Reservia](http://ulyssechopard.github.io/UlysseChopard_2_19042021) | Web integration of a sketched page | HTML5 / CSS / Git / Github
-[OhMyFood](http://ulyssechopard.gihub.io/UlysseChopard_3_09082021) | Integration | CSS animations
+[OhMyFood](http://ulyssechopard.github.io/UlysseChopard_3_09082021) | Integration | CSS animations
 [La Chouette Agence](http://ulyssechopard.github.io/UlysseChopard_4_26092021/index.html) | Optimization and SEO | JS performance, HTML5 best practices and SEO optimization
 [Kanap](https://github.com/UlysseChopard/UlysseChopard_5_19102021) | Javascript part of a web app | Dynamize and fetch data from backend with pure JS / Docker / Docker Compose
-[Picante](https://github.com/UlysseChopard/UlysseChopard_6_09112020) | Backend for a web app | NodeJS / Express.js / Mongoose / MongoDB / Docker / Docker Compose
+[Picante](https://github.com/UlysseChopard/UlysseChopard_6_09112021) | Backend for a web app | NodeJS / Express.js / Mongoose / MongoDB / Docker / Docker Compose
 [Groupomania](https://github.com/UlysseChopard/UlysseChopard_7_13122021) | Fullstack web app development | NodeJS / Express.js / Sequelize / MySQL / Docker / Docker Compose / VueJS / VueX / Vue-Router
 
 
