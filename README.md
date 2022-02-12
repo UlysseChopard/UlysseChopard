@@ -2,7 +2,7 @@
 
 I'll be avalable for work on april 2022.
 
-You can reach me at : *chopard.ulysse@gmail.com*
+You can reach me at *chopard.ulysse@gmail.com* or feel free to have a look around my [Linkedin profile](https://www.linkedin.com/in/ulysse-chopard/)
 
 Glad to meet you !
 
