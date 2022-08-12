@@ -1,50 +1,47 @@
-### Hi there 👋
+# Ulysse Chopard-Guillaumot
 
-I'll be avalable for work on april 2022.
+## Hi there 👋
 
-You can reach me at *chopard.ulysse@gmail.com*.
+You can reach me at _chopard.ulysse@gmail.com_.
 
-Feel free to have a look around my [Linkedin profile](https://www.linkedin.com/in/ulysse-chopard/)
+Feel free to have a look on my [LinkedIn profile](https://www.linkedin.com/in/ulysse-chopard/)
 
 Glad to meet you !
 
-#### Next ideal job
+## My current stack
 
-- Web application developer
-- Javascript stack (Vanilla JS, Vue, NodeJs, Express, Cypress, MongoDB, Mongoose) or backend and performance oriented languages such as Golang or Rust (I would need and love to learn)
-- Complex problem solving and learning would be great
+* Frontend
+  * Vue.js
+  * React
+  * Vanilla JS
+* Backend
+  * Node.js
+  * Nginx (maintaining only for now)
+* Databases management
+  * MySQL
+  * PostgreSQL
+  * MongoDB
+* Deployment
+  * Docker & Docker Compose
+  * SSH
+  * Vim
+  * Systemctl
 
-#### Current position
+## What I do these days
 
-I'm working on E2E testing with Cypress as a trainee for an operating room management web app called Orgo and developed by Medhop in Paris.
-I'm also moving the Orgo UI from PHP dynamised web app to Vue 3 powered web app.
+Currently, I work at Ksaar, a young start-up involved developing a No-Code / Low-Code application. In a team of 4 devs, I maintain the application, fix bugs and produce features as well. On a day to day basis, I use a lot React and Redux, and Express on Node.js. I am glad to learn bash / zsh scripting and take time on Vim for now.
 
-Besides, I'm following the web developer formation at OpenClassroom. In this context, I realized [some projects](####-my-projects-as-a-student) you'll find on my Github profile.
+## What's next ?
 
-#### Current working tools
+I am very interested in Rust and Elixir / Erlang and try to get the most from any shell I use. Should I have more time, I would try to write a web app on Elixir framework Phoenix.
 
-- Git / Github / Gitlab
-- Docker / Docker Compose
-- Mysql
-  - Sequelize
-- HTML / HTML5
-- CSS / CSS3
-- Javascript
-  - vanilla JS
-  - Vue.js
-    - VueX
-    - Vue-Router
-  - NodeJS
-  - MongoDB
-  - Mongoose
-  - Cypress
-  - Jest / Mocha / Chai
+## How I started programming
 
-#### Learning
+I worked on E2E testing with Cypress for an operating room management web app called Orgo and developed by Medhop in Paris. I also contributed to move its UI from PHP to Vue 3.
 
-I'm currently learning PHP and starting to learn Golang
+Besides, I attended to the web developer formation at OpenClassroom. In this context, I realized [some projects](####-my-projects-as-a-student) you'll find on my Github profile.
 
-#### My projects as a student
+## My student projects
 
 Part of them are deployed through Github Pages or Netlify, the others depend on servers and databases and must be installed before lauching them with Docker Compose.
 
