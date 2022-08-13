@@ -10,16 +10,15 @@ a {
 
 body {
     margin: 0;
-    padding: 16px 0;
+    padding: 1% 0;
 }
 
 main {
     display: flex;
-    width: 50%;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 32px;
+    margin: 0 16%;
 }
 
 section {
@@ -41,4 +40,9 @@ h2::before {
 
 li {
     list-style-type: none;
+    margin: 0 8px;
+}
+
+td, th {
+    padding: 8px;
 }

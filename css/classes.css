@@ -9,12 +9,34 @@
     display: none;
 }
 
-.company {
-    font-weight: bold;
+.horizontal {
+    display: flex;
+    justify-content: center;
 }
 
 .reverse {
     display: flex;
     flex-direction: column-reverse;
+}
+
+.item {
+    width: 100%;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.location {
+    font-style: italic;
+}
+
+.company::before {
+    content: " at ";
+    font-weight: normal;
+}
+
+.location::before {
+    content: " / "
 }
 
