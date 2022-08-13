@@ -40,11 +40,87 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/ids.css" />
+    <link rel="stylesheet" href="css/classes.css" />
+    <link rel="stylesheet" href="css/elements.css" />
+
+    <scrip src="js/index.js" async />
   </head>
 
   <body>
-    <!-- your content here... -->
-    <script src="js/scripts.js"></script>
+    <header>
+      <h1 id="name">Ulysse Chopard-Guillaumot</h1>
+      <aside>
+        <div class="separator"></div>
+        <table id="reach-me">
+          <caption class="hidden">
+            How to reach me
+          </caption>
+          <tr>
+            <th scope="row">Address</th>
+            <td>
+              <address>
+                Lieu dit Le Moulin de Guillerand<br />86500 Saulgé
+              </address>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Phone number</th>
+            <td><a href="tel:+33670417865">+33670417865</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>chopard.ulysse@gmail.com</td>
+          </tr>
+          <tr>
+            <th scope="row">Nationality</th>
+            <td>French</td>
+          </tr>
+          <tr>
+            <th scope="row">Working conditions</th>
+            <td>Remote</td>
+          </tr>
+        </table>
+        <div class="separator"></div>
+      </aside>
+    </header>
+    <main>
+      <section>
+        <h2>Experience</h2>
+        <ul></ul>
+      </section>
+      <section><h2>Technical experience</h2></section>
+      <section>
+        <h2>Education</h2>
+        <ol class="reverse">
+          <li>
+            Classe préparatoire littéraire
+            <span class="company">Lycée Michelet</span>
+            <address>Vanves</address>
+          </li>
+          <li>
+            Elève officier d'active de l'armée de terre
+            <span class="company">Ecole spéciale militaire de Saint-Cyr</span>
+            <address>Guer, Coëtquidan</address>
+          </li>
+          <li>
+            Développeur web <span class="company">OpenClassrooms</span>
+            <address>On remote</address>
+          </li>
+        </ol>
+      </section>
+      <section><h2>Extra</h2></section>
+    </main>
+    <footer>
+      <div class="separator"></div>
+      <nav>
+        <ul>
+          <li>
+            <a>FR</a>
+          </li>
+          <li><a>EN</a></li>
+        </ul>
+      </nav>
+    </footer>
   </body>
 </html>
