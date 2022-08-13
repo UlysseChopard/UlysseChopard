@@ -7,3 +7,38 @@ a {
     color: initial;
     text-decoration: none;
 }
+
+body {
+    margin: 0;
+    padding: 16px 0;
+}
+
+main {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 32px;
+}
+
+section {
+    width: 100%;
+}
+
+h2 {
+    color: #44B;
+}
+
+h2::before {
+    display: inline-block;
+    content: "";
+    margin-right: 1%;
+    width: 16%;
+    height: 8px;
+    background-color: #44B;
+}
+
+li {
+    list-style-type: none;
+}
