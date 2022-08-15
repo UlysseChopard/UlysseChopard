@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+aside {
+    margin: 16px 16%;
+}
+
 body {
     margin: 0;
     padding: 1% 0;
