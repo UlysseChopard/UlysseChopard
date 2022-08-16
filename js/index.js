@@ -1,6 +1,7 @@
-import { setItem } from "./localStorage.js";
-import { CV_KEY, DATA_FILE, SET_ITEM_EVENT } from "./config.js";
+import { record, recordEventListener, CV_KEY } from "./utils.js";
 import { createCV } from "./createCV.js";
+
+const DATA_FILE = "js/data.json";
 
 const getCVData = () =>
   fetch(DATA_FILE).then((res) =>
@@ -12,8 +13,8 @@ const fillCV = (e) => {
   createCV(newData);
 };
 
-window.addEventListener(SET_ITEM_EVENT, fillCV);
+recordEventListener(fillCV);
 
 getCVData().then((data) => {
-  setItem(CV_KEY, JSON.stringify(data), SET_ITEM_EVENT);
+  record(CV_KEY, JSON.stringify(data));
 });

@@ -1,12 +1,13 @@
-import { capitalize } from "./string.js";
-import { DESCRIPTION, CV_KEY } from "./config.js";
+import { capitalize, CV_KEY, newEl } from "./utils.js";
+
+const DESCRIPTION = "description";
 
 const createItemSummary = (item) => {
-  const wrapper = document.createElement("summary");
+  const wrapper = newEl("summary");
   wrapper.setAttribute("class", "item");
   for (const info of Object.keys(item)) {
     if (info === DESCRIPTION) continue;
-    const span = document.createElement("span");
+    const span = newEl("span");
     span.setAttribute("class", info);
     span.textContent = item[info];
     wrapper.appendChild(span);
@@ -15,7 +16,7 @@ const createItemSummary = (item) => {
 };
 
 const createItem = (item) => {
-  const wrapper = document.createElement("details");
+  const wrapper = newEl("details");
   wrapper.setAttribute("class", "item");
   wrapper.appendChild(createItemSummary(item));
   const description = item[DESCRIPTION];
@@ -26,7 +27,7 @@ const createItem = (item) => {
 };
 
 const createSection = (name, items) => {
-  const wrapper = document.createElement("section");
+  const wrapper = newEl("section");
   wrapper.setAttribute("class", name);
   for (const item of items) {
     const itemElement = createItem(item);
@@ -36,7 +37,7 @@ const createSection = (name, items) => {
 };
 
 const createTitle = (title, rank = 2) => {
-  const element = document.createElement(`h${rank}`);
+  const element = newEl(`h${rank}`);
   element.setAttribute("class", title);
   element.textContent = capitalize(title);
   return element;
