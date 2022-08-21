@@ -1,47 +1,46 @@
 import { capitalize, el } from "./utils.js";
 
-const HIDDEN_ITEMS = ["description"];
+const DESCRIPTION = "description";
+const HIDDEN_ITEMS = [DESCRIPTION];
 
-const createItemInfo = (info, text) => {
-  if (HIDDEN_ITEMS.includes(info)) return;
-  const span = el("span");
-  span.setAttribute("class", info);
-  span.textContent = text;
-  return span;
-};
+const createItemInfo = (className, textContent) =>
+  el("span", { className, textContent });
 
 const createItemSummary = (item) => {
-  const wrapper = el("summary", "item");
-  Object.entries(item).forEach(([info, text]) =>
-    wrapper.appendChild(createItemInfo(info, text))
-  );
+  const wrapper = el("p", "summary");
+  Object.entries(item).forEach(([type, text]) => {
+    if (HIDDEN_ITEMS.includes(type)) return;
+    wrapper.appendChild(createItemInfo(type, text));
+  });
   return wrapper;
 };
 
+const createItemDescription = (description) =>
+  el("p", {
+    className: "description",
+    textContent: description,
+  });
+
 const createItem = (item) => {
-  const wrapper = el("details", "item");
+  const wrapper = el("div", "item");
   wrapper.appendChild(createItemSummary(item));
   const description = item[DESCRIPTION];
   if (description) {
-    wrapper.appendChild(document.createTextNode(description));
+    wrapper.appendChild(createItemDescription(description));
   }
   return wrapper;
 };
 
 const createSection = (name, items) => {
   const wrapper = el("section", name);
-  for (const item of items) {
-    const itemElement = createItem(item);
-    wrapper.appendChild(itemElement);
-  }
+  items.forEach((item) => {
+    wrapper.appendChild(createItem(item));
+  });
   return wrapper;
 };
 
-const createTitle = (title, rank = 2) => {
-  const element = el(`h${rank}`, title);
-  element.textContent = capitalize(title);
-  return element;
-};
+const createTitle = (title, rank = 2) =>
+  el(`h${rank}`, { className: title, textContent: capitalize(title) });
 
 const createTitledSection = (section, items) => {
   const wrapper = document.createElement("div", section);
@@ -52,9 +51,9 @@ const createTitledSection = (section, items) => {
 
 const mountCV = (data, id) => {
   const cv = document.getElementById(id);
-  for (const [section, items] of Object.entries(data)) {
-    cv.appendChild(createTitledSection(section, items));
-  }
+  Object.entries(data).forEach(([section, items]) =>
+    cv.appendChild(createTitledSection(section, items))
+  );
 };
 
 export default mountCV;

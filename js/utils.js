@@ -15,10 +15,13 @@ export const onRecord = (cb) => window.addEventListener(RECORD_EVENT, cb);
 
 export const el = (type, options) => {
   const newEl = document.createElement(type);
-  if (typeof options === "string") {
-    newEl.setAttribute("class", options);
-  } else {
-    Object.entries(options).forEach(([attr, value]) => (newEl[attr] = value));
+  switch (typeof options) {
+    case "string":
+      newEl.setAttribute("class", options);
+      break;
+    case "object":
+      Object.entries(options).forEach(([attr, value]) => (newEl[attr] = value));
+      break;
   }
   return newEl;
 };
