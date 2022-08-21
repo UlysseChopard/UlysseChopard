@@ -1,7 +1,8 @@
-import { record, recordEventListener, CV_KEY } from "./utils.js";
-import { createCV } from "./createCV.js";
+import { onRecord, record, recordEventListener } from "./utils.js";
+import mountCV from "./cv.js";
 
 const DATA_FILE = "js/data.json";
+const CV_KEY = "cv";
 
 const getCVData = () =>
   fetch(DATA_FILE).then((res) =>
@@ -10,10 +11,10 @@ const getCVData = () =>
 
 const fillCV = (e) => {
   const newData = JSON.parse(e.value);
-  createCV(newData);
+  mountCV(newData, CV_KEY);
 };
 
-recordEventListener(fillCV);
+onRecord(fillCV);
 
 getCVData().then((data) => {
   record(CV_KEY, JSON.stringify(data));
