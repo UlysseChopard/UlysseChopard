@@ -1,7 +1,7 @@
 import { onRecord, record } from "./utils.js";
 import mountCV from "./mount-cv.js";
 
-const DATA_FILE = "cursus.json";
+const DATA_FILE = "js/data.json";
 const CV_KEY = "cv";
 
 const getCVData = () =>
