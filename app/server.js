@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const PORT = 80;
 
+app.set("views", "./views");
+app.set("view engine", "pug");
+
 app.use(express.static(__dirname));
 
 app.get("/", (_req, res) => {
