@@ -25,3 +25,10 @@ export const el = (type, options) => {
   }
   return newEl;
 };
+
+export const mount = (mountPoint, element) => {
+  const app = document.getElementById(mountPoint);
+  app.appendChild(element);
+};
+
+export const fetchJSON = (path) => fetch(path).then((res) => res.json());

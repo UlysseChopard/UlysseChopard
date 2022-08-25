@@ -32,6 +32,11 @@
             "location": "Remote"
         }
     ],
+    "technical experience": [
+        {
+            "techno": "Node.js"
+        }
+    ],
     "education": [
         {
             "degree": "Bachelor",
