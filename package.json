@@ -2,13 +2,12 @@
   "name": "cv-project",
   "version": "1.0.0",
   "description": "## Hi there 👋",
-  "main": "static/server.js",
+  "main": "index.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,11 +19,5 @@
   "bugs": {
     "url": "https://github.com/UlysseChopard/UlysseChopard/issues"
   },
-  "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme",
-  "dependencies": {
-    "express": "^4.18.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.19"
-  }
+  "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme"
 }
