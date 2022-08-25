@@ -2,7 +2,7 @@
   "name": "cv-project",
   "version": "1.0.0",
   "description": "## Hi there 👋",
-  "main": "app/server.js",
+  "main": "static/server.js",
   "directories": {
     "doc": "doc"
   },
@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme",
   "dependencies": {
-    "express": "^4.18.1",
-    "pug": "^3.0.2"
+    "express": "^4.18.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
