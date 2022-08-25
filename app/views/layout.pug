@@ -2,16 +2,19 @@ doctype html
 include mixins.pug
 html(lang="en")
     head
-        +head(name, description, title)
+        include includes/head.pug
         style
             include ../css/elements.css
             include ../css/classes.css
             include ../css/ids.css
     body 
         header
-        
+            h1#name= name
+            block info
         main
             block main
                 each value, key in cursus 
                     h2= key
                     +section(value)
+        footer 
+            include includes/footer.pug
