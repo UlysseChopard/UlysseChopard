@@ -1,0 +1,28 @@
+mixin item(data)
+    .item
+        each value, key in data
+            span(class=key)= value
+            // - trailing space
+            | 
+
+mixin section(data)
+    .section
+        each value, _key in data 
+            +item(value)
+
+mixin head(name, description, title)
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content=description)
+    meta(name="author" content=name)
+    meta(property="og:title" content=`CV ${name}`)
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="")
+    meta(property="og:description" content=description)
+    meta(property="og:image" content="")
+    link(rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+    script(src="/js/index.js" defer type="module")
+    title= title
