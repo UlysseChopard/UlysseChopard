@@ -1,11 +1,17 @@
+- const capitalize = s => s.charAt(0).toUpperCase() + s.slice(1)
+
 mixin item(data)
     .item
-        each value, key in data
-            span(class=key)= value
-            // - trailing space
-            | 
-
-mixin section(data)
+        p.summary
+            each value, key in data
+                unless key === "description"
+                    span(class=key)= value
+                    | 
+        if data.description
+            p.description= data.description
+mixin section(title, data)
     .section
-        each value, _key in data
-            +item(value)
+        h2 #{capitalize(title)}
+        .content
+            each value, _key in data
+                +item(value)

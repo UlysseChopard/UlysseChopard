@@ -3,18 +3,13 @@ include mixins.pug
 html(lang="en")
     head
         include includes/head.pug
-        style
-            include ../css/elements.css
-            include ../css/classes.css
-            include ../css/ids.css
-    body 
-        header
-            h1#name= name
+        title= config.title
+    body.flex 
+        header#info.sticky
             block info
         main
             block main
                 each value, key in cursus 
-                    h2= key
-                    +section(value)
+                    +section(key, value)
         footer 
             include includes/footer.pug

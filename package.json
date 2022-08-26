@@ -8,7 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "load-data": "node ./database/loader.js",
+    "start-server": "nodemon",
+    "start-db": "json-server --watch ./database/db.json",
+    "setup-db": "run-s load-data start-db",
+    "start": "run-p setup-db start-server",
+    "tailwind:watch": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch"
   },
   "repository": {
     "type": "git",
@@ -22,10 +27,14 @@
   },
   "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "express": "^4.18.1",
+    "json-server": "^0.17.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.1.8"
   }
 }

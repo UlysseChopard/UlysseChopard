@@ -1,18 +1,15 @@
 extends layout.pug 
 
 block info
-    .separator
-    aside.horizontal
-        #photo.
-            Some photo
-        table#reach-me
-            caption.hidden How to reach me
-            tbody
-                each information in informations 
-                    tr 
-                        th(scope="row")= information.title
-                        if information.link
-                            td: a(href=information.link)= information.text 
-                        else
-                            td= information.text
-    .separator
+    h1#name= config.name
+    #photo: img(src="images/ulysse.jpg")
+    table#reach-me
+        caption.hidden How to reach me
+        tbody
+            each information in informations 
+                tr 
+                    th(scope="row")= information.title
+                    if information.link
+                        td: a(href=information.link)= information.text 
+                    else
+                        td= information.text
