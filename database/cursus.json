@@ -2,32 +2,32 @@
     "experience": [
         {
             "position": "Sales BtoB",
-            "additional": "Traineeship",
+            "status": "Trainee",
             "company": "Beer of the Abbey of Signy",
             "location": "Paris and Picardie",
             "description": "An interesting Traineeship"
         },
         {
             "position": "Business Intelligence consultant",
-            "additional": "Apprenticeship",
+            "status": "Trainee",
             "company": "Bertin IT",
             "location": "Montigny-le-Bretonneux, Île de France"
         },
         {
             "position": "Competitive Intelligence consultant",
-            "additional": "Freelance",
+            "status": "Freelance",
             "company": "Fragmos Chain",
             "location": "Paris"
         },
         {
             "position": "Web developer",
-            "additional": "Apprenticeship",
+            "status": "Trainee",
             "company": "Orgo",
             "location": "Remote"
         },
         {
             "position": "Fullstack web developer",
-            "additional": "Employee",
+            "status": "Employee",
             "company": "Ksaar",
             "location": "Remote"
         }
@@ -44,7 +44,7 @@
             "domain": "Army",
             "school": "Special Military School of Saint-Cyr",
             "location": "Guer, Cöetquidan, Bretagne",
-            "additional": "Interrupted for reorientation"
+            "description": "Interrupted for reorientation"
         },
         {
             "degree": "Bachelor",

@@ -1,0 +1,27 @@
+mixin item(data)
+    - const isVowel = chr => (/[aeiou]/i).test(chr);
+
+    .flex.flex-col.my-4
+        p
+            span.font-medium.uppercase= `${data.position || data.school} \n`
+            span.font-light
+            each value, key in data
+                unless ["description", "position"].includes(key)
+                    case key
+                        when "company"
+                            = ` at ${value}`
+                        when "status"
+                            span.lowercase= ` as a${isVowel(value.charAt(0)) ? 'n ' + value : ' ' + value}`
+                        when "location"
+                            = `${value.toLowerCase() === "remote" ? ', remote' : ' in ' + value}`
+                        default
+                            = `${value}`
+        if data.description
+            p.italic.ml-4= data.description
+
+mixin section(title, data)
+    .flex.flex-col.leading-relaxed.whitespace-pre
+        h2.capitalize.font-semibold.text-lg= title
+        .content.flex.flex-col-reverse
+            each value, _key in data
+                +item(value)

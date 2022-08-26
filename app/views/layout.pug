@@ -1,15 +1,12 @@
 doctype html
-include mixins.pug
+include mixins/section.pug
 html(lang="en")
     head
         include includes/head.pug
         title= config.title
-    body.flex 
-        header#info.sticky
-            block info
-        main
-            block main
-                each value, key in cursus 
-                    +section(key, value)
-        footer 
-            include includes/footer.pug
+    body.font-mono
+        main.flex.divide-x.divide-solid
+            block leftbar
+            block content
+            block aside
+        include includes/footer.pug

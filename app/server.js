@@ -19,7 +19,7 @@ app.get("/", async (_req, res) => {
       console.error(e);
       res.send(e);
     });
-  res.render("cv", data);
+  res.render("pages/cv", data);
 });
 
 app.listen(PORT, () => {
