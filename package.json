@@ -8,11 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "run-p load-data compile-css",
+    "start": "run-p  -c start-db start-server",
     "load-data": "node ./database/loader.js",
-    "start-db": "json-server --watch ./database/db.json",
-    "tailwind:watch": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch",
-    "start-server": "nodemon",
-    "start": "run-p tailwind:watch start-server"
+    "compile-css": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --minify",
+    "compile-css:watch": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch",
+    "start-db": "json-server --watch ./database/index.js",
+    "start-server": "nodemon"
   },
   "repository": {
     "type": "git",
