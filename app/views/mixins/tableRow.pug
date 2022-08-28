@@ -1,11 +1,9 @@
 mixin tableRow(title, text, link)
-    - const shared = ["border-y-2", "border-transparent", "border-solid", "h-10" ];
+    - const border = ["border-2", "border-transparent", "border-solid" ];
     tr.group.align-middle.h-10
-        th(scope="row").p-0
-            .text-left.pl-4.rounded-l.border-l-2(class=shared class=link ? "group-hover_border-gray-500" : "")= title
-        td.p-0
-            .text-right.pr-4.rounded-r.border-r-2(class=shared class=link ? "group-hover_border-gray-500" : "")
-                if link
-                    a(href=link)= text
-                else 
-                    = text
+        th(scope="row").p-0.align-middle.text-left.pl-4.h-10= title
+        td.p-0.align-middle.text-right.px-4.rounded.border-r-2.h-10.align-middle(class=border class=link ? "group-hover_border-gray-500" : "")
+            if link
+                a(href=link)= text
+            else 
+                = text

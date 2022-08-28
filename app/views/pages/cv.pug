@@ -4,7 +4,7 @@ include ../mixins/section.pug
 include ../mixins/tableRow.pug
 
 block leftbar 
-    .flex.flex-col.items-center.px-4.w-72.flex-initial
+    .fixed.left-0.max-w-xs.h-screen.flex.flex-col.items-center.px-4.flex-initial.bg-amber-500.text-white.z-1
         h1.font-bold.text-xl.my-4= config.name
         img.rounded-lg(src="images/ulysse.jpg")
         table.table-auto.border-separate.border-spacing-y-2
@@ -14,9 +14,11 @@ block leftbar
                     +tableRow(information.title, information.text, information.link)
 
 block content 
-    .px-4.flex-auto
-        each value, key in cursus 
-            +section(key, value)
+    .flex.flex-col.space-between.ml-80.min-w-prose
+        .px-4
+            each value, key in cursus 
+                +section(key, value)
+        include ../includes/footer.pug
 
 block aside 
     aside.pl-4.flex-1.

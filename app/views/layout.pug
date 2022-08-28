@@ -5,8 +5,7 @@ html(lang="en")
         include includes/head.pug
         title= config.title
     body.font-mono
-        main.flex.divide-x.divide-solid
-            block leftbar
+        include includes/header.pug
+        main.flex.divide-x.divide-solid.divide-x-2
             block content
             block aside
-        include includes/footer.pug
