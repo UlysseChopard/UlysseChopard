@@ -4,22 +4,20 @@ include ../mixins/section.pug
 include ../mixins/tableRow.pug
 
 block leftbar 
-    .fixed.left-0.max-w-xs.h-screen.flex.flex-col.items-center.px-4.flex-initial.bg-primary.text-white.z-1
-        h1.font-bold.text-xl.my-4= config.name
-        img.rounded-lg.w-32(src="images/ulysse.jpg")
-        table.table-auto.border-separate.border-spacing-y-2
-            caption.invisible Reach me
-            tbody.text-xs
-                each information in informations 
-                    +tableRow(information.title, information.text, information.link)
+    h1.font-bold.text-xl.text-center= config.name
+    img.rounded-lg.w-32(src="images/ulysse.jpg")
+    table.text-xs
+        caption.invisible Reach me
+        tbody
+            each information in informations 
+                +tableRow(information.title, information.text, information.link)
+    // - Invisible div for spacing with flex
+    .h-12
 
 block content 
-    .flex.flex-col.space-between.ml-80.min-w-prose
-        .px-4
-            each value, key in cursus 
-                +section(key, value)
-        include ../includes/footer.pug
+    each value, key in cursus 
+        +section(key, value)
 
 block aside 
-    aside.pl-4.flex-1.
+    .
         Test

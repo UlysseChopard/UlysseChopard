@@ -8,7 +8,7 @@ mixin experienceItem(experience)
     span.italic= experience.location
 
 mixin item(data, type)
-    .flex.flex-col.my-4.text-justify
+    .flex.flex-col.justify-between.text-justify
         p
             case type 
                 when "experience"
@@ -20,7 +20,7 @@ mixin item(data, type)
             p.text-sm.ml-4= data.description
 
 mixin section(type, data)
-    .flex.flex-col
+    .my-4
         h2.uppercase.font-semibold.text-lg.text-primary= type
         .content.flex.flex-col-reverse
             each value in data

@@ -1,7 +1,7 @@
 mixin tableRow(title, text, link)
-    tr.group.align-middle.h-10.text-justify
-        th(scope="row").p-0.align-middle.pl-4.h-10= title
-        td.p-0.align-middle.px-4.h-10.align-middle
+    tr.h-12
+        th(scope="row").align-middle.text-justify= title
+        td.align-middle.text-right
             if link
                 a.text-white(href=link)= text
             else 

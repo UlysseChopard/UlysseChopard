@@ -572,6 +572,10 @@ a:where(:hover, :focus-visible) {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -580,8 +584,36 @@ a:where(:hover, :focus-visible) {
   left: 0px;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.left-64 {
+  left: 16rem;
+}
+
+.right-40 {
+  right: 10rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
 .z-0 {
   z-index: 0;
+}
+
+.m-4 {
+  margin: 1rem;
 }
 
 .my-4 {
@@ -597,6 +629,26 @@ a:where(:hover, :focus-visible) {
   margin-left: 20rem;
 }
 
+.ml-64 {
+  margin-left: 16rem;
+}
+
+.mr-32 {
+  margin-right: 8rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mr-40 {
+  margin-right: 10rem;
+}
+
 .block {
   display: block;
 }
@@ -609,16 +661,32 @@ a:where(:hover, :focus-visible) {
   display: table;
 }
 
-.aspect-square {
-  aspect-ratio: 1 / 1;
-}
-
 .h-10 {
   height: 2.5rem;
 }
 
 .h-screen {
   height: 100vh;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-full {
@@ -629,8 +697,28 @@ a:where(:hover, :focus-visible) {
   width: 8rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-initial {
@@ -639,6 +727,10 @@ a:where(:hover, :focus-visible) {
 
 .flex-1 {
   flex: 1 1 0%;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
 }
 
 .table-auto {
@@ -666,6 +758,14 @@ a:where(:hover, :focus-visible) {
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-x-reverse: 0;
   border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -682,6 +782,14 @@ a:where(:hover, :focus-visible) {
   border-style: solid;
 }
 
+.overflow-clip {
+  overflow: clip;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -690,18 +798,35 @@ a:where(:hover, :focus-visible) {
   border-top-width: 2px;
 }
 
+.border-l-2 {
+  border-left-width: 2px;
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(63 127 191 / var(--tw-bg-opacity));
+}
+
+.bg-local {
+  background-attachment: local;
 }
 
 .p-0 {
   padding: 0px;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .pl-4 {
@@ -710,6 +835,10 @@ a:where(:hover, :focus-visible) {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-justify {
@@ -756,24 +885,16 @@ a:where(:hover, :focus-visible) {
   text-transform: uppercase;
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
 .italic {
   font-style: italic;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(63 127 191 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
