@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./app/views/**/*.pug"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#3F7FBF",
+        secondary: "#07427C",
+      },
+    },
   },
   plugins: [
     ({ addVariant }) => {

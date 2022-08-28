@@ -1,27 +1,27 @@
-mixin item(data)
-    - const isVowel = chr => (/[aeiou]/i).test(chr);
+mixin experienceItem(experience)
+    span.font-semibold= experience.position
+    |
+    | &mdash;
+    | 
+    a(href=experience.company.link)= experience.company.name
+    | 
+    span.italic= experience.location
 
-    .flex.flex-col.my-4
+mixin item(data, type)
+    .flex.flex-col.my-4.text-justify
         p
-            span.font-medium.uppercase= `${data.position || data.school} \n`
-            span.font-light
-            each value, key in data
-                unless ["description", "position"].includes(key)
-                    case key
-                        when "company"
-                            = ` at ${value}`
-                        when "status"
-                            span.lowercase= ` as a${isVowel(value.charAt(0)) ? 'n ' + value : ' ' + value}`
-                        when "location"
-                            = `${value.toLowerCase() === "remote" ? ', remote' : ' in ' + value}`
-                        default
-                            = `${value}`
-        if data.description
-            p.italic.ml-4= data.description
+            case type 
+                when "experience"
+                    +experienceItem(data)
+                when "education"
+                    - break
 
-mixin section(title, data)
-    .flex.flex-col.leading-relaxed.whitespace-pre
-        h2.capitalize.font-semibold.text-lg= title
+        if data.description
+            p.text-sm.ml-4= data.description
+
+mixin section(type, data)
+    .flex.flex-col
+        h2.uppercase.font-semibold.text-lg.text-primary= type
         .content.flex.flex-col-reverse
-            each value, _key in data
-                +item(value)
+            each value in data
+                +item(value, type)

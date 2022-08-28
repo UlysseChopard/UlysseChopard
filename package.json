@@ -8,11 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "run-p load-data compile-css",
-    "start": "run-p  -c start-db start-server",
-    "load-data": "node ./database/loader.js",
-    "compile-css": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --minify",
-    "compile-css:watch": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch",
+    "start": "run-p  -c build:dev start-db start-server",
+    "build": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --minify",
+    "build:dev": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch",
     "start-db": "json-server --watch ./database/index.js",
     "start-server": "nodemon"
   },

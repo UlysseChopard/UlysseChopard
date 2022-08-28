@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    a {
+        color: theme("colors.secondary");
+        background: linear-gradient(0deg, theme("colors.secondary"), theme("colors.secondary")) no-repeat right bottom / 0 var(--bg-h);
+        transition: background-size 350ms;
+        padding-bottom: 2px;
+        --bg-h: 2px;
+    }
+    a:where(:hover, :focus-visible) {
+        background-size: 100% var(--bg-h);
+        background-position-x: left;
+    }
+}

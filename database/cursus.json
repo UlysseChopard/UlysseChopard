@@ -3,32 +3,47 @@
         {
             "position": "Sales BtoB",
             "status": "Trainee",
-            "company": "Beer of the Abbey of Signy",
+            "company": {
+                "name": "Beer of the Abbey of Signy",
+                "link": "https://signy.fr/"
+            },
             "location": "Paris and Picardie",
             "description": "An interesting Traineeship"
         },
         {
             "position": "Business Intelligence consultant",
             "status": "Trainee",
-            "company": "Bertin IT",
+            "company": {
+                "name": "Bertin IT",
+                "link": "https://bertin.fr/"
+            },
             "location": "Montigny-le-Bretonneux, Île de France"
         },
         {
             "position": "Competitive Intelligence consultant",
             "status": "Freelance",
-            "company": "Fragmos Chain",
+            "company": {
+                "name": "Fragmos Chain",
+                "link": "https://www.fragmos-chain.com/"
+            },
             "location": "Paris"
         },
         {
             "position": "Web developer",
             "status": "Trainee",
-            "company": "Orgo",
+            "company": {
+                "name": "Medhop",
+                "link": "https://www.medhop.fr/"
+            },
             "location": "Remote"
         },
         {
             "position": "Fullstack web developer",
             "status": "Employee",
-            "company": "Ksaar",
+            "company": {
+                "name": "Ksaar",
+                "link": "https: //www.ksaar.com/"
+            },
             "location": "Remote"
         }
     ],

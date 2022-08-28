@@ -1,9 +1,8 @@
 mixin tableRow(title, text, link)
-    - const border = ["border-2", "border-transparent", "border-solid" ];
-    tr.group.align-middle.h-10
-        th(scope="row").p-0.align-middle.text-left.pl-4.h-10= title
-        td.p-0.align-middle.text-right.px-4.rounded.border-r-2.h-10.align-middle(class=border class=link ? "group-hover_border-gray-500" : "")
+    tr.group.align-middle.h-10.text-justify
+        th(scope="row").p-0.align-middle.pl-4.h-10= title
+        td.p-0.align-middle.px-4.h-10.align-middle
             if link
-                a(href=link)= text
+                a.text-white(href=link)= text
             else 
                 = text
