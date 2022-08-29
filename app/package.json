@@ -2,16 +2,15 @@
   "name": "cv-project",
   "version": "1.0.0",
   "description": "## Hi there 👋",
-  "main": "app/server.js",
+  "main": "server.js",
   "directories": {
     "doc": "doc"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "run-p  -c build:dev start-db start-server",
-    "build": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --minify",
-    "build:dev": "npx tailwind -i ./app/css/index.css -o ./app/dist/index.css --watch",
-    "start-db": "json-server --watch ./database/index.js",
+    "start": "run-p  -c build:dev start-server",
+    "build:prod": "npx tailwind -i css/index.css -o dist/index.css --minify",
+    "build:dev": "npx tailwind -i css/index.css -o dist/index.css --watch",
     "start-server": "nodemon"
   },
   "repository": {
@@ -19,7 +18,7 @@
     "url": "git+https://github.com/UlysseChopard/UlysseChopard.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "UCG",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/UlysseChopard/UlysseChopard/issues"
@@ -28,7 +27,6 @@
   "dependencies": {
     "axios": "^0.27.2",
     "express": "^4.18.1",
-    "json-server": "^0.17.0",
     "pug": "^3.0.2"
   },
   "devDependencies": {

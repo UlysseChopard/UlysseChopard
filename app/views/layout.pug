@@ -4,13 +4,13 @@ html(lang="en")
     head
         include includes/head.pug
         title= config.title
-    body.font-mono.h-screen.w-screen
+    body.font-mono.relative
         header.fixed.z-1.left-0.w-64.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white
             block leftbar
-        main.ml-64.mr-40.min-w-prose.p-4
-            include includes/introduction.pug
-            block content
-        aside.absolute.top-0.right-0.w-40.p-4.h-screen.border-l-2.border-l-solid.border-l-dimgray
-            block aside
-        footer.absolute.bottom-0.left-64.right-40.text-center.border-t-solid.border-t-2.border-t-dimgray.p-4
+        main.ml-64.mr-40
+            .p-4
+                include includes/introduction.pug
+                block content
             include includes/footer.pug
+        aside.absolute.top-0.right-0.w-40.p-4.border-l-2.border-l-solid.border-l-dimgray.h-full
+            block aside

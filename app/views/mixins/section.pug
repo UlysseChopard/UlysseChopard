@@ -7,6 +7,15 @@ mixin experienceItem(experience)
     | 
     span.italic= experience.location
 
+mixin educationItem(education)
+    span.font-semibold #{education.degree} in #{education.domain} 
+    | 
+    | &mdash;
+    | 
+    a(href=education.school.link)= education.school.name
+    |  
+    span.italic= education.location
+
 mixin item(data, type)
     .flex.flex-col.justify-between.text-justify
         p
@@ -14,14 +23,16 @@ mixin item(data, type)
                 when "experience"
                     +experienceItem(data)
                 when "education"
-                    - break
+                    +educationItem(data)
 
-        if data.description
-            p.text-sm.ml-4= data.description
+        if  Array.isArray(data.description)
+            ul.ml-4 
+                each item in data.description 
+                    li.text-sm= item
 
 mixin section(type, data)
     .my-4
-        h2.uppercase.font-semibold.text-lg.text-primary= type
+        h2.uppercase.font-semibold.text-lg.text-secondary= type
         .content.flex.flex-col-reverse
             each value in data
                 +item(value, type)
