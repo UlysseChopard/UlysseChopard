@@ -592,12 +592,12 @@ a:where(:hover, :focus-visible) {
   right: 0px;
 }
 
-.m-2 {
-  margin: 0.5rem;
-}
-
 .m-4 {
   margin: 1rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .my-2 {
@@ -610,17 +610,12 @@ a:where(:hover, :focus-visible) {
   margin-bottom: 1rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .ml-60 {
   margin-left: 15rem;
 }
 
-.mr-60 {
-  margin-right: 15rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mb-4 {
@@ -639,12 +634,8 @@ a:where(:hover, :focus-visible) {
   margin-top: 0.5rem;
 }
 
-.mr-40 {
-  margin-right: 10rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
+.mr-60 {
+  margin-right: 15rem;
 }
 
 .block {
@@ -669,10 +660,6 @@ a:where(:hover, :focus-visible) {
 
 .h-full {
   height: 100%;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .w-60 {
@@ -772,17 +759,8 @@ a:where(:hover, :focus-visible) {
   padding: 1rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
 }
 
 .text-center {
