@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["/views/**/*.pug"],
+  content: ["./views/**/*.pug"],
   theme: {
     extend: {
       colors: {
         primary: "#3F7FBF",
         secondary: "#07427C",
+        tertiary: "dimgray",
       },
     },
   },

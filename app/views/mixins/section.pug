@@ -17,7 +17,7 @@ mixin educationItem(education)
     span.italic= education.location
 
 mixin item(data, type)
-    .flex.flex-col.justify-between.text-justify
+    .flex.flex-col.justify-between.text-justify.m-2
         p
             case type 
                 when "experience"
@@ -32,7 +32,7 @@ mixin item(data, type)
 
 mixin section(type, data)
     .my-4
-        h2.uppercase.font-semibold.text-lg.text-secondary= type
+        +title(2, type)
         .content.flex.flex-col-reverse
             each value in data
                 +item(value, type)

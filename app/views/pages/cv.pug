@@ -1,22 +1,15 @@
 extends ../layout.pug
 
-include ../mixins/section.pug
-include ../mixins/tableRow.pug
-
-block leftbar 
-    h1.font-bold.text-xl.text-center= config.name
-    img.rounded-lg.w-32(src="images/ulysse.jpg")
-    table.text-xs
-        caption.invisible Reach me
-        tbody
-            each information in informations 
-                +tableRow(information.title, information.text, information.link)
-    // - Invisible div for spacing with flex
-    .h-12
-
-block content 
-    each value, key in cursus 
-        +section(key, value)
+block main
+    main.ml-60.mr-60.print_block
+        .p-4
+            include ../includes/introduction.pug
+            each value, key in cursus 
+                +section(key, value)
+        .print_w-screen
+            include ../includes/footer.pug
 
 block aside 
-    include ../includes/hobbies.pug
+    aside.absolute.top-0.right-0.w-60.p-4.border-l-2.border-l-solid.border-l-tertiary.h-full.print_block
+        +title(2, "Skills")
+        include ../includes/miscellaneous.pug

@@ -1,16 +1,26 @@
 doctype html
+
 include mixins/section.pug
+include mixins/tableRow.pug
+include mixins/title.pug
+
 html(lang="en")
     head
         include includes/head.pug
         title= config.title
     body.font-mono.relative
-        header.fixed.z-1.left-0.w-64.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white
-            block leftbar
-        main.ml-64.mr-40
-            .p-4
-                include includes/introduction.pug
-                block content
-            include includes/footer.pug
-        aside.absolute.top-0.right-0.w-40.p-4.border-l-2.border-l-solid.border-l-dimgray.h-full
-            block aside
+        header.fixed.z-1.left-0.w-60.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white
+            +title(1, config.name)
+            img.rounded-lg.w-32(src="images/ulysse.jpg")
+            table.text-xs
+                caption.invisible Reach me
+                tbody
+                    each information in informations 
+                        +tableRow(information.title, information.text, information.link)
+            // - Invisible div for spacing with flex
+            .h-12
+        nav.absolute.top-0.ml-60.mt-4.w-full.h-12
+            a.m-4(href="/") Home 
+            a.m-4(href="/software") Software skills
+        block main
+        block aside

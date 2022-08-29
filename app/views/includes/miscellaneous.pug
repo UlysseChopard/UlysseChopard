@@ -1,0 +1,22 @@
+each value, title in miscellaneous 
+    script. 
+        const openDetails = () => {};
+        window.addEventListener("beforeprint", openDetails);
+    a(href="/software") Software
+    details.group.cursor-pointer.tracking-tight.mb-4(open)
+        summary.group-open_text-tertiary.font-semibold.capitalize= title
+        ul.ml-2.whitespace-normal.break-all.leading-4.text-sm
+            if Array.isArray(value)
+                each item in value 
+                    li.ml-4.mt-2.capitalize.cursor-default.list-disc= item
+            else
+                each item, key in value
+                    details.my-2
+                        summary.capitalize= key
+                        ul.ml-4.mt-2
+                            if Array.isArray(item)
+                                each subitem in item 
+                                    li.capitalize.cursor-default= subitem 
+                            else
+                                each subitem, subkey in item 
+                                    li.capitalize #{subkey}: #{subitem}
