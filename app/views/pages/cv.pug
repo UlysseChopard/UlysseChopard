@@ -1,9 +1,6 @@
 extends ../layout.pug
 
 block main
-    .p-4
-        include ../includes/introduction.pug
-        each value, key in cursus 
-            +section(key, value)
-    .print_w-screen
-        include ../includes/footer.pug
+    include ../includes/introduction.pug
+    each value, key in cursus 
+        +section(key, value)

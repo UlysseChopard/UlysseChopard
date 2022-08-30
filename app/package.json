@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "run-p  -c build:dev start-server",
-    "build:prod": "npx tailwind -i views/css/index.css -o public/index.css --minify",
+    "build:prod": "npx tailwind -i views/css/index.css -o public/css/index.css --minify",
     "build:dev": "npx tailwind -i views/css/index.css -o public/css/index.css --watch",
     "start-server": "nodemon"
   },
