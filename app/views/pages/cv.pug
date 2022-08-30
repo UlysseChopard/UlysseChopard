@@ -1,15 +1,9 @@
 extends ../layout.pug
 
 block main
-    main.ml-60.mr-60.print_block
-        .p-4
-            include ../includes/introduction.pug
-            each value, key in cursus 
-                +section(key, value)
-        .print_w-screen
-            include ../includes/footer.pug
-
-block aside 
-    aside.absolute.top-0.right-0.w-60.p-4.border-l-2.border-l-solid.border-l-tertiary.h-full.print_block
-        +title(2, "Skills")
-        include ../includes/miscellaneous.pug
+    .p-4
+        include ../includes/introduction.pug
+        each value, key in cursus 
+            +section(key, value)
+    .print_w-screen
+        include ../includes/footer.pug

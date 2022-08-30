@@ -9,9 +9,13 @@ html(lang="en")
         include includes/head.pug
         title= config.title
     body.font-mono.relative
-        header.fixed.z-1.left-0.w-60.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white
+        nav.absolute.top-0.left-60.ml-4.m-2.p-2.bg-primary.rounded-lg.flex.justify-start.drop-shadow-md
+                span.mr-4.p-2.rounded-lg: a.text-white(href="/") Home
+                span.p-2.rounded-lg: a.text-white(href="/software-skills") Software skills
+        header.fixed.z-1.left-0.w-60.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white.shadow-md.shadow-tertiary
             +title(1, config.name)
-            img.rounded-lg.w-32(src="images/ulysse.jpg")
+            img.w-32.h-48.rounded-lg.object-fill.drop-shadow-md(src="images/image-cv.jpeg")
+            // - (src="images/ulysse.jpg")
             table.text-xs
                 caption.invisible Reach me
                 tbody
@@ -19,8 +23,5 @@ html(lang="en")
                         +tableRow(information.title, information.text, information.link)
             // - Invisible div for spacing with flex
             .h-12
-        nav.absolute.top-0.ml-60.mt-4
-            a.m-4(href="/") Home 
-            a.m-4(href="/software") Software skills
-        block main
-        block aside
+        main.absolute.top-14.left-60.right-4.z-0
+            block main
