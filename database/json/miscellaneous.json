@@ -1,69 +1,4 @@
 {
-    "software": {
-        "development tools": [
-            "zsh / bash",
-            "command",
-            "VS Code",
-            "vim",
-            "ssh",
-            "Git",
-            "Github / Gitlab"
-        ],
-        "devops": [
-            "docker",
-            "docker-compose",
-            "bash",
-            "zsh",
-            "command"
-        ],
-        "server": [
-            "node.js",
-            "nginx"
-        ],
-        "views": [
-            "html5",
-            "css3",
-            "javascript",
-            "react",
-            "vue",
-            "pug"
-        ],
-        "state management": [
-            "redux",
-            "vuex",
-            "vue-router"
-        ],
-        "preprocessors": [
-            "sass",
-            "scss",
-            "postcss",
-            "typescript"
-        ],
-        "bundlers": [
-            "webpack",
-            "vite"
-        ],
-        "databases": [
-            "MongoDB",
-            "MySQL",
-            "PostgreSQL"
-        ],
-        "object relational mappers": [
-            "Sequelize",
-            "Mongoose"
-        ],
-        "test": [
-            "Cypress",
-            "Jest",
-            "Mocha / Chai"
-        ],
-        "notions": [
-            "Python",
-            "C",
-            "Elixir",
-            "Go"
-        ]
-    },
     "languages": {
         "english": "fluent",
         "spanish": "school level"
@@ -75,15 +10,5 @@
     "hobbies": [
         "boxing",
         "mountain hiking"
-    ],
-    "social networks": {
-        "Github": {
-            "name": "@UlysseChopard",
-            "link": ""
-        },
-        "LinkedIn": {
-            "name": "Ulysse Chopard-Guillaumot",
-            "link": ""
-        }
-    }
+    ]
 }

@@ -21,5 +21,15 @@
     {
         "title": "Working conditions",
         "text": "Remote"
+    },
+    {
+        "title": "Github",
+        "text": "@UlysseChopard",
+        "link": "https://github.com/UlysseChopard"
+    },
+    {
+        "title": "LinkedIn",
+        "text": "Ulysse Chopard-Guillaumot",
+        "link": "https://www.linkedin.com/in/ulysse-chopard/"
     }
 ]
