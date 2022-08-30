@@ -22,17 +22,6 @@ app.get("/", async (_req, res) => {
   res.render("pages/cv", data);
 });
 
-app.get("/software-skills", async (_req, res) => {
-  const data = await axios
-    .get("http://localhost:3000/db")
-    .then((res) => res.data)
-    .catch((e) => {
-      console.error(e);
-      res.send(e);
-    });
-  res.render("pages/software-skills", data);
-});
-
 app.listen(PORT, () => {
   console.log(`Server listening: http://localhost:8080`);
 });

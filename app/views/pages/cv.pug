@@ -4,3 +4,9 @@ block main
     include ../includes/introduction.pug
     each value, key in cursus 
         +section(key, value)
+
+block software-skills 
+    = JSON.stringify(software)
+
+block miscellaneous 
+    = JSON.stringify(miscellaneous)
