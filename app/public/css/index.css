@@ -638,6 +638,10 @@ a:where(:hover, :focus-visible) {
   margin-top: 0.5rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }

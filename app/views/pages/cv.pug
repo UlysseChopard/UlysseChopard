@@ -1,12 +1,15 @@
-extends ../layout.pug
+extends /layout.pug
+
+block nav 
+    +navButton("Cursus")
+    +navButton("Software-skills")
+    +navButton("Miscellaneous")
 
 block main
-    include ../includes/introduction.pug
-    each value, key in cursus 
-        +section(key, value)
-
-block software-skills 
-    = JSON.stringify(software)
-
-block miscellaneous 
-    = JSON.stringify(miscellaneous)
+    .cursus.block
+        include /includes/main/introduction.pug
+        include /includes/main/cursus.pug 
+    .software-skills.hidden 
+        include /includes/main/software-skills.pug 
+    .miscellaneous.hidden 
+        include /includes/main/miscellaneous.pug 

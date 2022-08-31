@@ -16,6 +16,8 @@ mixin educationItem(education)
     |  
     span.italic= education.location
 
+
+
 mixin item(data, type)
     .flex.flex-col.justify-between.text-justify.m-2
         p
@@ -30,9 +32,22 @@ mixin item(data, type)
                 each item in data.description 
                     li.text-sm= item
 
-mixin section(type, data)
+mixin section(data, type)
     .my-4
         +title(2, type)
         .content.flex.flex-col-reverse
-            each value in data
-                +item(value, type)
+        each value in data
+            +item(value, type)
+
+mixin miscSection(data)
+    each value, key in data
+        +title(2, key)
+        ul.ml-8
+            if Array.isArray(value)
+                each item in value
+                    li.capitalize= item
+            else if typeof value === "object"
+                each item, key in value 
+                    li.capitalize #{key}: #{item}
+            else 
+                li.capitalize= value

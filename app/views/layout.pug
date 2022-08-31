@@ -1,19 +1,17 @@
 doctype html
 
-include mixins/section.pug
-include mixins/tableRow.pug
-include mixins/title.pug
-include mixins/navButton.pug
+include /mixins/section.pug
+include /mixins/tableRow.pug
+include /mixins/title.pug
+include /mixins/navButton.pug
 
 html(lang="en")
     head
-        include includes/head.pug
+        include /includes/head.pug
         title= config.title
     body.font-mono.relative
         nav#main-nav.fixed.top-2.left-64.z-10.bg-primary.rounded-lg.drop-shadow-md
-                +navButton("Home")
-                +navButton("Software-skills")
-                +navButton("Miscellaneous")
+            block nav
         header.fixed.z-1.left-0.w-60.max-w-xs.h-screen.flex.flex-col.items-center.justify-between.bg-primary.p-4.text-white.shadow-md.shadow-tertiary
             +title(1, config.name)
             img.w-32.h-48.rounded-lg.object-fill.drop-shadow-md(src="images/image-cv.jpeg")
@@ -23,11 +21,6 @@ html(lang="en")
                     each information in informations 
                         +tableRow(information.title, information.text, information.link)
         main.ml-64.mr-4.pt-14
-            #home
-                block main
-            #software-skills.hidden 
-                block software-skills
-            #miscellaneous.hidden 
-                block miscellaneous
+            block main
         footer.ml-60
-            include includes/footer.pug
+            include /includes/footer.pug

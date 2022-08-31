@@ -1,11 +1,14 @@
-const hideAll = () => {
+const hideAllExcept = (className) => {
   document
     .querySelectorAll("main > *")
-    .forEach((el) => el && (el.style.display = "none"));
+    .forEach((el) =>
+      el.classList.contains(className)
+        ? el.classList.remove("hidden")
+        : el.classList.add("hidden")
+    );
 };
 
 document.getElementById("main-nav").addEventListener("click", (e) => {
-  hideAll();
   const [, selectedSection] = e.target.id.match(/(.*)\-btn/);
-  document.getElementById(selectedSection).style.display = "block";
+  hideAllExcept(selectedSection);
 });
