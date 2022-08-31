@@ -1,15 +1,23 @@
 extends /layout.pug
 
+block info 
+    table.text-xs.mb-10
+        caption.invisible Reach me
+        tbody
+            each information in informations 
+                +tableRow(information.title, information.text, information.link)
+
 block nav 
-    +navButton("Cursus")
-    +navButton("Software-skills")
-    +navButton("Miscellaneous")
+    +navButton("cursus")
+    +navButton("software-skills")
+    +navButton("miscellaneous")
 
 block main
-    .cursus.block
+    #cursus
         include /includes/main/introduction.pug
-        include /includes/main/cursus.pug 
-    .software-skills.hidden 
-        include /includes/main/software-skills.pug 
-    .miscellaneous.hidden 
-        include /includes/main/miscellaneous.pug 
+        +mainSection(cursus)
+    #software-skills
+        input.form-input.border-tertiary.px-4.w-60.m-4.rounded-lg#search(type="search" placeholder="search")
+        +miscSection(software)
+    #miscellaneous
+        +miscSection(miscellaneous)

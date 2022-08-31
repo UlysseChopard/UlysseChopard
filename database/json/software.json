@@ -1,6 +1,7 @@
 {
     "development tools": [
-        "zsh / bash",
+        "zsh",
+        "bash",
         "command",
         "VS Code",
         "vim",
@@ -10,10 +11,7 @@
     ],
     "devops": [
         "docker",
-        "docker-compose",
-        "bash",
-        "zsh",
-        "command"
+        "docker-compose"
     ],
     "server": [
         "node.js",
@@ -50,6 +48,11 @@
     "object relational mappers": [
         "Sequelize",
         "Mongoose"
+    ],
+    "css library": [
+        "vuetify",
+        "tailwindcss",
+        "material-ui"
     ],
     "test": [
         "Cypress",

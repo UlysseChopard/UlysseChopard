@@ -1,0 +1,7 @@
+script. 
+    const input = document.getElementById("search");
+    const lines = document.querySelectorAll(".search-results > li");
+    input.addEventListener("input", e => {
+        const searchText = e.target.value.trim().toLowerCase();
+        lines.forEach(line => line.textContent.startsWith(searchText) ? line.style.display = "list-item" : line.style.display = "none");
+    })

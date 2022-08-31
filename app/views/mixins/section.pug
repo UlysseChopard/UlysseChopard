@@ -28,26 +28,29 @@ mixin item(data, type)
                     +educationItem(data)
 
         if  Array.isArray(data.description)
-            ul.ml-4 
+            ul.ml-4.font-mono
                 each item in data.description 
                     li.text-sm= item
 
-mixin section(data, type)
-    .my-4
-        +title(2, type)
-        .content.flex.flex-col-reverse
-        each value in data
-            +item(value, type)
+mixin mainSection(data) 
+    each value, key in data
+        .my-4
+            +title(2, key)
+            .content.flex.flex-col-reverse
+                each item in value
+                    +item(item, key)
 
 mixin miscSection(data)
-    each value, key in data
-        +title(2, key)
-        ul.ml-8
-            if Array.isArray(value)
-                each item in value
-                    li.capitalize= item
-            else if typeof value === "object"
-                each item, key in value 
-                    li.capitalize #{key}: #{item}
-            else 
-                li.capitalize= value
+    .flex.flex-wrap
+        each value, key in data
+            .rounded-lg.m-4.p-4.w-60.border-solid.border-2.border-gray-200.drop-shadow-md
+                +title(2, key)
+                ul.ml-8.font-mono.search-results
+                    if Array.isArray(value)
+                        each item in value
+                            li.capitalize= item
+                    else if typeof value === "object"
+                        each item, key in value 
+                            li.capitalize #{key}: #{item}
+                    else 
+                        li.capitalize= value

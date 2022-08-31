@@ -3,13 +3,18 @@ const path = require("path");
 const express = require("express");
 const axios = require("axios");
 
+const viewConfig = require("./config.json");
+
 const app = express();
 const PORT = 8080;
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 
-app.locals.basedir = app.get("views");
+app.locals = {
+  config: viewConfig,
+  basedir: app.get("views"),
+};
 
 app.use(express.static(path.join(__dirname, "public")));
 

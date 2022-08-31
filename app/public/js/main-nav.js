@@ -1,14 +1,24 @@
-const hideAllExcept = (className) => {
-  document
-    .querySelectorAll("main > *")
-    .forEach((el) =>
-      el.classList.contains(className)
-        ? el.classList.remove("hidden")
-        : el.classList.add("hidden")
-    );
+const nodes = document.querySelectorAll("main > *");
+const hideAllExcept = (nodes, id) => {
+  nodes.forEach((el) => {
+    if (!el.classList.length) {
+      el.classList.add("block");
+    }
+    if (el.id === id) {
+      el.classList.remove("hidden");
+    } else {
+      el.classList.add("hidden");
+    }
+  });
 };
 
-document.getElementById("main-nav").addEventListener("click", (e) => {
-  const [, selectedSection] = e.target.id.match(/(.*)\-btn/);
-  hideAllExcept(selectedSection);
+const event = new Event("hashchange");
+
+window.addEventListener("DOMContentLoaded", () => {
+  if (!location.hash) location.hash = "#cursus";
+  window.dispatchEvent(event);
+});
+
+window.addEventListener("hashchange", () => {
+  hideAllExcept(nodes, location.hash.slice(1));
 });
