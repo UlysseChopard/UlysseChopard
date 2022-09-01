@@ -41,9 +41,9 @@ mixin mainSection(data)
                     +item(item, key)
 
 mixin miscSection(data)
-    .flex.flex-wrap
+    .flex.flex-wrap.justify-center
         each value, key in data
-            .rounded-lg.m-4.p-4.w-60.border-solid.border-2.border-gray-200.drop-shadow-md
+            .rounded-lg.m-4.p-4.w-60.shadow-md
                 +title(2, key)
                 ul.ml-8.font-mono.search-results
                     if Array.isArray(value)
