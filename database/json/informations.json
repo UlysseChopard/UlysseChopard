@@ -1,0 +1,35 @@
+[
+    {
+        "title": "Address",
+        "text": "Lieu-dit le Moulin de Guillerand 86500 Saulgé",
+        "link": "https://www.google.fr/maps/place/Le+Moulin+de+Guillerand,+86500+Saulg%C3%A9/@46.3490229,0.8862922,2006m/data=!3m1!1e3!4m5!3m4!1s0x47fc233a05ecdb0d:0x5c6d951f12032395!8m2!3d46.349009!4d0.895047"
+    },
+    {
+        "title": "Phone number",
+        "text": "+33670417865",
+        "link": "tel:+33670417865"
+    },
+    {
+        "title": "Email address",
+        "text": "chopard.ulysse@gmail.com",
+        "link": "mailto:chopard.ulysse@gmail.com"
+    },
+    {
+        "title": "Nationality",
+        "text": "French"
+    },
+    {
+        "title": "Working conditions",
+        "text": "Remote"
+    },
+    {
+        "title": "Github",
+        "text": "@UlysseChopard",
+        "link": "https://github.com/UlysseChopard"
+    },
+    {
+        "title": "LinkedIn",
+        "text": "Ulysse Chopard-Guillaumot",
+        "link": "https://www.linkedin.com/in/ulysse-chopard/"
+    }
+]
