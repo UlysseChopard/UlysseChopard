@@ -7,7 +7,7 @@ function SingleExperience({ experience }) {
         <span className="font-semibold">{experience.position}</span>
         &mdash;
         <a href={experience.company.link}>{experience.company.name}</a>
-        <span className="italic">{experience.location}</span>
+        <span className="italic"> {experience.location}</span>
       </p>
       {experience.description && (
         <ul className="ml-4 font-mono">
