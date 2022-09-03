@@ -9,7 +9,7 @@ function Schooling({ schooling }) {
         </span>
         &mdash;
         <a href={schooling.school.link}>{schooling.school.name}</a>
-        <span className="italic">{schooling.location}</span>
+        <span className="italic"> {schooling.location}</span>
       </p>
       {schooling.description && (
         <ul className="ml-4 font-mono">
