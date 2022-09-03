@@ -1,14 +1,24 @@
-{
-    "languages": {
-        "english": "fluent",
-        "spanish": "school level"
+[
+    {
+        "title": "languages",
+        "content": [
+            "english: fluent",
+            "spanish: school level"
+        ]
     },
-    "soft skills": [
-        "initiative",
-        "inquisitiveness"
-    ],
-    "hobbies": [
-        "boxing",
-        "mountain hiking"
-    ]
-}
+    {
+        "title": "soft skills",
+        "content": [
+            "initiative",
+            "curiosity",
+            "like challenges"
+        ]
+    },
+    {
+        "title": "hobbies",
+        "content": [
+            "boxing",
+            "mountain hiking"
+        ]
+    }
+]

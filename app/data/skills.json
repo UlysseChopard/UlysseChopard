@@ -1,0 +1,100 @@
+[
+    {
+        "title": "development tools",
+        "content": [
+            "zsh",
+            "bash",
+            "command",
+            "VS Code",
+            "vim",
+            "ssh",
+            "Git",
+            "Github / Gitlab"
+        ]
+    },
+    {
+        "title": "devops",
+        "content": [
+            "docker",
+            "docker-compose"
+        ]
+    },
+    {
+        "title": "server",
+        "content": [
+            "node.js",
+            "nginx"
+        ]
+    },
+    {
+        "title": "UI",
+        "content": [
+            "html5",
+            "css3",
+            "javascript",
+            "react",
+            "vue",
+            "pug"
+        ]
+    },
+    {
+        "title": "state management",
+        "content": [
+            "redux",
+            "vuex",
+            "vue-router"
+        ]
+    },
+    {
+        "title": "css tools",
+        "content": [
+            "sass",
+            "scss",
+            "postcss",
+            "vuetify",
+            "tailwindcss",
+            "material-ui",
+            "autoprefixer"
+        ]
+    },
+    {
+        "title": "bundlers",
+        "content": [
+            "webpack",
+            "vite"
+        ]
+    },
+    {
+        "title": "databases",
+        "content": [
+            "mySQL",
+            "PostgreSQL",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "ORM",
+        "content": [
+            "Sequelize",
+            "Mongoose"
+        ]
+    },
+    {
+        "title": "test",
+        "content": [
+            "Cypress",
+            "Jest",
+            "Mocha",
+            "Chai"
+        ]
+    },
+    {
+        "title": "Notions in",
+        "content": [
+            "Python",
+            "C",
+            "Elixir",
+            "Go"
+        ]
+    }
+]

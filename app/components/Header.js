@@ -14,6 +14,7 @@ export default function Header() {
           alt="My picture"
           width={150}
           height={200}
+          priority
         />
       </div>
       <table className="text-xs mb-10">
