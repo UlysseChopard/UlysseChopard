@@ -1,0 +1,28 @@
+{
+  "name": "cv-project",
+  "version": "1.0.0",
+  "description": "Online CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlysseChopard/UlysseChopard.git"
+  },
+  "keywords": [
+    "next.js",
+    "vercel",
+    "react",
+    "markdown"
+  ],
+  "author": "UCG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UlysseChopard/UlysseChopard/issues"
+  },
+  "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme",
+  "devDependencies": {
+    "create-next-app": "^12.2.5"
+  }
+}

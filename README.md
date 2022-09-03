@@ -2,6 +2,8 @@
 
 ## Hi there 👋
 
+This CV page is deployed on Vercel. Here is the [link](https://ulysse-chopard.vercel.app/)
+
 You can reach me at _chopard.ulysse@gmail.com_.
 
 Feel free to have a look on my [LinkedIn profile](https://www.linkedin.com/in/ulysse-chopard/)
