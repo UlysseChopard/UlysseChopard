@@ -1,8 +1,0 @@
-mixin tableRow(title, text, link)
-    tr.h-10
-        th(scope="row").align-middle.text-justify= title
-        td.align-middle.text-right
-            if link
-                a.text-white(href=link)= text
-            else 
-                = text
