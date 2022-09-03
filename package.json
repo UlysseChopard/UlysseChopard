@@ -1,18 +1,20 @@
 {
-  "name": "database",
+  "name": "cv-project",
   "version": "1.0.0",
-  "description": "\"data for cv-project\"",
+  "description": "Online CV",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "json-server index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UlysseChopard/UlysseChopard.git"
   },
   "keywords": [
-    "json-server"
+    "next.js",
+    "vercel",
+    "react",
+    "markdown"
   ],
   "author": "UCG",
   "license": "ISC",
@@ -20,7 +22,7 @@
     "url": "https://github.com/UlysseChopard/UlysseChopard/issues"
   },
   "homepage": "https://github.com/UlysseChopard/UlysseChopard#readme",
-  "dependencies": {
-    "json-server": "^0.17.0"
+  "devDependencies": {
+    "create-next-app": "^12.2.5"
   }
 }
