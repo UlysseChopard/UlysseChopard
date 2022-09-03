@@ -1,0 +1,39 @@
+[
+    {
+        "degree": "Bachelor",
+        "domain": "Humanities",
+        "school": {
+            "name": "Jules Michelet preparation school",
+            "link": "http://www.cite-scolaire-michelet-vanves.ac-versailles.fr/classes-preparatoires/prepas-a-michelet/"
+        },
+        "location": "Vanves, Île de France",
+        "description": [
+            "Ecole Normale Supérieur competition"
+        ]
+    },
+    {
+        "degree": "Master",
+        "domain": "Management",
+        "school": {
+            "name": "Special Military School of Saint-Cyr",
+            "link": "https://www.st-cyr.terre.defense.gouv.fr/"
+        },
+        "location": "Guer, Cöetquidan, Bretagne",
+        "description": [
+            "Interrupted for reorientation"
+        ]
+    },
+    {
+        "degree": "Bachelor",
+        "domain": "Software development",
+        "school": {
+            "name": "OpenClassrooms",
+            "link": "https://openclassrooms.com/"
+        },
+        "location": "Remote",
+        "description": [
+            "Project-based formation",
+            "A dedicated mentor"
+        ]
+    }
+]

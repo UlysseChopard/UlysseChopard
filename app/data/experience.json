@@ -1,0 +1,68 @@
+[
+    {
+        "position": "Sales BtoB",
+        "status": "Trainee",
+        "company": {
+            "name": "Beer of the Abbey of Signy",
+            "link": "https://signy.fr/"
+        },
+        "location": "Paris and Picardie",
+        "description": [
+            "An interesting Traineeship"
+        ]
+    },
+    {
+        "position": "Business Intelligence consultant",
+        "status": "Trainee",
+        "company": {
+            "name": "Bertin IT",
+            "link": "https://bertin.fr/"
+        },
+        "location": "Montigny-le-Bretonneux, Île de France",
+        "description": [
+            "Analysis and report",
+            "Security domain"
+        ]
+    },
+    {
+        "position": "Competitive Intelligence consultant",
+        "status": "Freelance",
+        "company": {
+            "name": "Fragmos Chain",
+            "link": "https://www.fragmos-chain.com/"
+        },
+        "location": "Paris",
+        "description": [
+            "For a startup",
+            "Fintech environment",
+            "Blockchain technology"
+        ]
+    },
+    {
+        "position": "Web developer",
+        "status": "Trainee",
+        "company": {
+            "name": "Medhop",
+            "link": "https://www.medhop.fr/"
+        },
+        "location": "Remote",
+        "description": [
+            "E2E tests setup with Cypress",
+            "Beginning of the implementation of UI with Vue and Material Design"
+        ]
+    },
+    {
+        "position": "Fullstack web developer",
+        "status": "Employee",
+        "company": {
+            "name": "Ksaar",
+            "link": "https: //www.ksaar.com/"
+        },
+        "location": "Remote",
+        "description": [
+            "In a team of four software developers",
+            "Agile methodologies",
+            "React / Node.js / TypeScript / Nginx / Docker"
+        ]
+    }
+]
