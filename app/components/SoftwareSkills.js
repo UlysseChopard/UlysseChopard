@@ -19,7 +19,7 @@ export default function SoftwareSkills({ skills }) {
         setSearchedSkills(filteredSkills);
       }
     },
-    [setSearch, search, searchedSkills, setSearchedSkills]
+    [setSearch, search, searchedSkills, setSearchedSkills, skills]
   );
 
   return (

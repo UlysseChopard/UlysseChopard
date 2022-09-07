@@ -9,7 +9,9 @@ export default function Miscellaneous({ miscellaneous }) {
           {category.content && (
             <ul className="ml-8 font-mono search-results">
               {category.content.map((item) => (
-                <li className="capitalize">{item}</li>
+                <li key={item.length + item} className="capitalize">
+                  {item}
+                </li>
               ))}
             </ul>
           )}
