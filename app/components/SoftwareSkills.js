@@ -8,7 +8,6 @@ export default function SoftwareSkills({ skills }) {
     (e) => {
       e.preventDefault();
       setSearch(e.target.value.trim().toLowerCase());
-      console.log(search || 0);
       if (!search) setSearchedSkills(skills);
       else {
         const filteredSkills = skills.map((item) => {

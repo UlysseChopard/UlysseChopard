@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "public/images/image-cv.jpeg";
+import profilePic from "public/images/ulysse-cut.jpeg";
 
 export default function Header() {
   return (
@@ -7,13 +7,11 @@ export default function Header() {
       <h1 className="font-bold text-xl text-center">
         Ulysse Chopard-Guillaumot
       </h1>
-      <div className="flex justify-center">
+      <div className="flex justify-center w-50">
         <Image
           className="rounded-lg object-fill drop-shadow-md"
           src={profilePic}
           alt="My picture"
-          width={150}
-          height={200}
           priority
         />
       </div>
