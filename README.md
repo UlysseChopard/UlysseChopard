@@ -2,13 +2,11 @@
 
 ## Hi there 👋
 
-This CV page is deployed on Vercel. Here is the [link](https://ulysse-chopard.vercel.app/)
+Glad to meet you !
 
 You can reach me at _chopard.ulysse@gmail.com_.
 
 Feel free to have a look on my [LinkedIn profile](https://www.linkedin.com/in/ulysse-chopard/)
-
-Glad to meet you !
 
 ## My current stack
 
@@ -18,30 +16,34 @@ Glad to meet you !
   * Vanilla JS
 * Backend
   * Node.js
+  * Python
+  * Go
   * Nginx (maintaining only for now)
-* Databases management
+* Automation
+  * Shell scripting
+* Infrastructure
+  * AWS EC2 and EKS
+  * Terraform
+  * Docker
+  * Kubernetes
+* Database
   * MySQL
   * PostgreSQL
   * MongoDB
-* Deployment
-  * Docker & Docker Compose
-  * SSH
-  * Vim
-  * Systemctl
 
 ## What I do these days
 
-Currently, I work at Ksaar, a young start-up involved developing a No-Code / Low-Code application. In a team of 4 devs, I maintain the application, fix bugs and produce features as well. On a day to day basis, I use a lot React and Redux, and Express on Node.js. I am glad to learn bash / zsh scripting and take time on Vim for now.
+I work at [Pysae](https://web.pysae.com/), a remote-first company involved in passenger transport management and based in Rennes. As a technical leader focused on backend, I design and develop new features, especially complex ones. What is more, I don't shy away from infrastructure related tasks and occasionnally get my hands dirty in Javascript.
 
 ## What's next ?
 
-I am very interested in Rust and Elixir / Erlang and try to get the most from any shell I use. Should I have more time, I would try to write a web app on Elixir framework Phoenix.
+Motivated by challenges and performance of programms, I'd be glad to work in languages like C, Rust or Go. Like most of us, software developers, I spend some of my spare time learning from functional paradigm in Haskell or Elm to new approaches to my day-to-day work as [the GoTTH stack](https://www.youtube.com/watch?v=k00jVJeZxrs).
 
 ## How I started programming
 
-I worked on E2E testing with Cypress for an operating room management web app called Orgo and developed by Medhop in Paris. I also contributed to move its UI from PHP to Vue 3.
+During Covid-19 quarantines in France, I found myself unemployed and started to learn and play in C. A pleasure for my mind, and a very well designed language in terms of simplicity. Next year, I joined OpenClassroom formation as a trainee working at [Medhop](https://www.medhop.fr/) on their product, Orgo, for hospitals. This was the beginning of my professionnal career as a software developer. I enjoyed learning every days, mind challenges and occasionnal adrenaline shots, and still do I.
 
-Besides, I attended to the web developer formation at OpenClassroom. In this context, I realized [some projects](####-my-projects-as-a-student) you'll find on my Github profile.
+<!--
 
 ## My student projects
 
@@ -56,8 +58,6 @@ Project | Content | What I learned
 [Picante](https://github.com/UlysseChopard/UlysseChopard_6_09112021) | Backend for a web app | NodeJS / Express.js / Mongoose / MongoDB / Docker / Docker Compose
 [Groupomania](https://github.com/UlysseChopard/UlysseChopard_7_13122021) | Fullstack web app development | NodeJS / Express.js / Sequelize / MySQL / Docker / Docker Compose / VueJS / VueX / Vue-Router
 
-
-<!--
 **UlysseChopard/UlysseChopard** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
